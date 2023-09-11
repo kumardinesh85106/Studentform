@@ -15,6 +15,4 @@ def Student(request):
             return HttpResponse(str(SFDO.cleaned_data)) 
         else:
             return HttpResponse('invalid data')
-
-
     return render(request,'Student.html',d)
